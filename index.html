@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Emmy Mander Design</title>
+    <link rel="icon" href="assets/images/em-design-favicon.png">
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <!-- General Styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--================================================
+    Navigation
+    =================================================-->
+    <header>
+        <div class="navbar">
+            <nav class="navigation">
+                <a href="index.html" class="nav-links active">Home</a>
+                <a href="projects.html" class="nav-links">Projects</a>
+                <div class="spacer">
+                    <a href="index.html" class="nav-link-ignore"><img class="logo"
+                            src="assets/images/emmy-mander-logo.png"></a>
+                </div>
+                <a href="about.html" class="nav-links">About</a>
+                <a href="contact.html" class="nav-links">Contact</a>
+            </nav>
+        </div>
+        <div class="menu-toggle">
+            <div class="icon">
+                <!-- Burger animation -->
+                <div class="hamburger"></div>
+            </div>
+        </div>
+        <div id="navLinksDiv" class="nav-links-div">
+            <a href="index.html" class="nav-links-toggle animated fadeIn active">Home</a>
+            <a href="projects.html" class="nav-links-toggle animated fadeIn">Projects</a>
+            <a href="about.html" class="nav-links-toggle animated fadeIn">About</a>
+            <a href="contact.html" class="nav-links-toggle animated fadeIn">Contact</a>
+        </div>
+    </header>
+
+    <!--================================================
+    Caption
+    =================================================-->
+    <section class="caption-heading caption-box">
+        <div class="container">
+            <h1 class="text-center">
+                Hi! My name is Emmy Mander, I am an illustrator and
+                digital designer living in Kristianstad, Sweden
+            </h1>
+        </div>
+    </section>
+
+    <!--================================================
+    Images
+    =================================================-->
+    <section class="container img-container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="content my-3">
+                    <a href="windonsyd.html">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="assets/images/windonsyd/windonsyd-square-three.png">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Windon Syd</h3>
+                            <p class="content-text">See project <i class="fas fa-chevron-right"></i></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="content my-3">
+                    <a href="chimi.html">
+                        <div class="content-overlay"></div>
+                        <img class="content-image" src="assets/images/chimi/chimi-square.png">
+                        <div class="content-details fadeIn-bottom">
+                            <h3 class="content-title">Chimi Eyewear</h3>
+                            <p class="content-text">See project <i class="fas fa-chevron-right"></i></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="all-projects-row">
+            <a href="projects.html">
+                <p class="all-projects">See all projects <i class="fas fa-chevron-right"></i></p>
+            </a>
+        </div>
+    </section>
+
+    <!--================================================
+    Footer
+    =================================================-->
+    <section class="footer mt-5">
+        <div class="container">
+            <div class="row footer-info">
+                <div class="col-md-4 footer-left">
+                    <p>Emmy Mander</p>
+                    <p>+46 708 53 17 21</p>
+                </div>
+                <div class="col-md-4 footer-center">
+                    <p class="footer-p-center">Hello & Welcome!</p>
+                </div>
+                <div class="col-md-4 footer-right">
+                    <p>emmy.mander@hotmail.com</p>
+                    <p>Kristianstad, Sweden</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script> <!-- Hämtar funktioner -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.menu-toggle').click(function () {   // Klickfunktion
+                $('nav').toggleClass('active');   // Till header nav.active i css
+                var x = document.getElementById("navLinksDiv");
+                if (!x.style.display || x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            });
+        })
+    </script>
+    <!-- För animation burger nedan -->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.icon').click(function () { /*För icon klassen i header*/
+                $('.icon').toggleClass('active');
+            })
+        })   
+    </script>
+    <script type="text/javascript">
+        function myFunction() {
+            var x = document.getElementById("navLinksDiv");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>
