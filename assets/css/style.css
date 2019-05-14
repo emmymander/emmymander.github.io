@@ -265,6 +265,15 @@ body {
   text-align: center;
   font-family: 'Roboto', 'serif';
 }
+@media screen and (max-width: 500px) {
+  .caption-heading .text-center {
+    color: #202020;
+    font-family: 'Frank Ruhl Libre', 'serif';
+    font-size: 30px;
+    margin-top: 80px;
+    margin-bottom: 0px;
+  }
+}
 
 /*-------------------------------------------------------
 # Images
